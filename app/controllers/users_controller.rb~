@@ -69,7 +69,7 @@ class UsersController < ApplicationController
 	if current_user 
 		redirect_to(root_path) unless current_user.admin?
 	else
-		redirect_to(signin_path) 
+		redirect_to(signin_path) unless 
 	end
     end
 

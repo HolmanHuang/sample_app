@@ -14,6 +14,10 @@ SampleApp::Application.configure do
   # Compress JavaScripts and CSS
   config.assets.compress = true
 
+  #other manifests or individual stylesheets and JavaScript files to include, add them to the precompile array
+  config.assets.precompile += %w( *.css *.js )
+  
+
   # Don't fallback to assets pipeline if a precompiled asset is missed
   config.assets.compile = false
 

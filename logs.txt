@@ -1,0 +1,100 @@
+2012-02-26T08:05:33+00:00 app[web.1]: 
+2012-02-26T08:05:33+00:00 app[web.1]: ActionView::Template::Error (blueprint/screen.css isn't precompiled):
+2012-02-26T08:05:33+00:00 app[web.1]:     1: <!--[if lt IE 9]>
+2012-02-26T08:05:33+00:00 app[web.1]:     2: <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+2012-02-26T08:05:33+00:00 app[web.1]:     3: <![endif]-->
+2012-02-26T08:05:33+00:00 app[web.1]:     4: <%= stylesheet_link_tag 'blueprint/screen', :media => 'screen' %>
+2012-02-26T08:05:33+00:00 app[web.1]:     5: <%= stylesheet_link_tag 'blueprint/print',  :media => 'print' %>
+2012-02-26T08:05:33+00:00 app[web.1]:     6: <!--[if lt IE 8]><%= stylesheet_link_tag 'blueprint/ie' %><![endif]-->
+2012-02-26T08:05:33+00:00 app[web.1]:     7: <%= stylesheet_link_tag 'custom', :media => 'screen' %>
+2012-02-26T08:05:33+00:00 app[web.1]:   app/views/layouts/_stylesheets.html.erb:4:in `_app_views_layouts__stylesheets_html_erb__3039573764175531155_16139000'
+2012-02-26T08:05:33+00:00 app[web.1]:   app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb___3965942271140371035_19986440'
+2012-02-26T08:05:33+00:00 app[web.1]: 
+2012-02-26T08:05:33+00:00 app[web.1]: cache: [GET /] miss
+2012-02-26T08:05:33+00:00 app[web.1]: 
+2012-02-26T08:05:33+00:00 heroku[router]: GET cold-robot-2030.heroku.com/ dyno=web.1 queue=0 wait=0ms service=374ms status=500 bytes=728
+2012-02-26T08:05:33+00:00 heroku[nginx]: 222.65.253.140 - - [26/Feb/2012:08:05:33 +0000] "GET / HTTP/1.1" 500 728 "-" "Mozilla/5.0 (Windows NT 5.1; rv:10.0.2) Gecko/20100101 Firefox/10.0.2" cold-robot-2030.heroku.com
+2012-02-26T00:07:13-08:00 heroku[slugc]: Slug compilation started
+2012-02-26T08:07:58+00:00 app[web.1]:     5: <%= stylesheet_link_tag 'blueprint/print',  :media => 'print' %>
+2012-02-26T08:07:58+00:00 app[web.1]:     7: <%= stylesheet_link_tag 'custom', :media => 'screen' %>
+2012-02-26T08:07:58+00:00 app[web.1]:   app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb___3965942271140371035_19986440'
+2012-02-26T08:07:58+00:00 app[web.1]: 
+2012-02-26T08:07:58+00:00 app[web.1]: Rendered pages/home.html.erb within layouts/application (0.3ms)
+2012-02-26T08:07:58+00:00 app[web.1]: Rendered layouts/_stylesheets.html.erb (0.6ms)
+2012-02-26T08:07:58+00:00 app[web.1]: 
+2012-02-26T08:07:58+00:00 app[web.1]:   Processing by PagesController#home as HTML
+2012-02-26T08:07:58+00:00 app[web.1]: cache: [GET /] miss
+2012-02-26T08:07:58+00:00 app[web.1]: Completed 500 Internal Server Error in 2ms
+2012-02-26T08:07:58+00:00 app[web.1]: ActionView::Template::Error (blueprint/screen.css isn't precompiled):
+2012-02-26T08:07:58+00:00 app[web.1]: 
+2012-02-26T08:07:58+00:00 app[web.1]:     4: <%= stylesheet_link_tag 'blueprint/screen', :media => 'screen' %>
+2012-02-26T08:07:58+00:00 app[web.1]:     6: <!--[if lt IE 8]><%= stylesheet_link_tag 'blueprint/ie' %><![endif]-->
+2012-02-26T08:07:58+00:00 app[web.1]: 
+2012-02-26T08:07:58+00:00 app[web.1]: 
+2012-02-26T08:07:58+00:00 app[web.1]:     1: <!--[if lt IE 9]>
+2012-02-26T08:07:58+00:00 app[web.1]:     3: <![endif]-->
+2012-02-26T08:07:58+00:00 app[web.1]:   app/views/layouts/_stylesheets.html.erb:4:in `_app_views_layouts__stylesheets_html_erb__3039573764175531155_16139000'
+2012-02-26T08:07:58+00:00 app[web.1]: Started GET "/" for 222.65.253.140 at 2012-02-26 00:07:58 -0800
+2012-02-26T08:07:58+00:00 app[web.1]:     2: <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+2012-02-26T08:07:58+00:00 heroku[router]: GET cold-robot-2030.heroku.com/ dyno=web.1 queue=0 wait=0ms service=13ms status=500 bytes=728
+2012-02-26T08:07:58+00:00 heroku[nginx]: 222.65.253.140 - - [26/Feb/2012:08:07:58 +0000] "GET / HTTP/1.1" 500 728 "-" "Mozilla/5.0 (Windows NT 5.1; rv:10.0.2) Gecko/20100101 Firefox/10.0.2" cold-robot-2030.heroku.com
+2012-02-26T08:10:31+00:00 heroku[api]: Release v14 created by hwmhere@gmail.com
+2012-02-26T08:10:31+00:00 heroku[api]: Deploy 033a9a5 by hwmhere@gmail.com
+2012-02-26T08:10:31+00:00 heroku[web.1]: State changed from up to bouncing
+2012-02-26T08:10:31+00:00 heroku[web.1]: State changed from bouncing to created
+2012-02-26T08:10:31+00:00 heroku[web.1]: State changed from created to starting
+2012-02-26T00:10:31-08:00 heroku[slugc]: Slug compilation finished
+2012-02-26T08:10:33+00:00 heroku[web.1]: Stopping process with SIGTERM
+2012-02-26T08:10:33+00:00 app[web.1]: >> Stopping ...
+2012-02-26T08:10:34+00:00 heroku[web.1]: Starting process with command `thin -p 47163 -e production -R /home/heroku_rack/heroku.ru start`
+2012-02-26T08:10:34+00:00 heroku[web.1]: Process exited with status 0
+2012-02-26T08:10:38+00:00 app[web.1]: >> Thin web server (v1.2.6 codename Crazy Delicious)
+2012-02-26T08:10:38+00:00 app[web.1]: >> Maximum connections set to 1024
+2012-02-26T08:10:38+00:00 app[web.1]: >> Listening on 0.0.0.0:47163, CTRL+C to stop
+2012-02-26T08:10:38+00:00 heroku[web.1]: State changed from starting to up
+2012-02-26T08:44:57+00:00 app[web.1]: 
+2012-02-26T08:44:57+00:00 app[web.1]: Started GET "/" for 222.65.253.140 at 2012-02-26 00:44:57 -0800
+2012-02-26T08:44:57+00:00 app[web.1]: 
+2012-02-26T08:44:57+00:00 app[web.1]:   Processing by PagesController#home as HTML
+2012-02-26T08:44:57+00:00 app[web.1]: Rendered pages/home.html.erb within layouts/application (13.5ms)
+2012-02-26T08:44:57+00:00 app[web.1]: Rendered layouts/_stylesheets.html.erb (25.3ms)
+2012-02-26T08:44:57+00:00 app[web.1]: Completed 500 Internal Server Error in 87ms
+2012-02-26T08:44:57+00:00 app[web.1]: 
+2012-02-26T08:44:57+00:00 app[web.1]:     2: <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+2012-02-26T08:44:57+00:00 app[web.1]: ActionView::Template::Error (blueprint/screen.css isn't precompiled):
+2012-02-26T08:44:57+00:00 app[web.1]:     1: <!--[if lt IE 9]>
+2012-02-26T08:44:57+00:00 app[web.1]:     3: <![endif]-->
+2012-02-26T08:44:57+00:00 app[web.1]:     5: <%= stylesheet_link_tag 'blueprint/print',  :media => 'print' %>
+2012-02-26T08:44:57+00:00 app[web.1]:     4: <%= stylesheet_link_tag 'blueprint/screen', :media => 'screen' %>
+2012-02-26T08:44:57+00:00 app[web.1]:     6: <!--[if lt IE 8]><%= stylesheet_link_tag 'blueprint/ie' %><![endif]-->
+2012-02-26T08:44:57+00:00 app[web.1]:     7: <%= stylesheet_link_tag 'custom', :media => 'screen' %>
+2012-02-26T08:44:57+00:00 app[web.1]:   app/views/layouts/_stylesheets.html.erb:4:in `_app_views_layouts__stylesheets_html_erb___4064946858904511808_18698600'
+2012-02-26T08:44:57+00:00 app[web.1]:   app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb___2816584567809116105_22608500'
+2012-02-26T08:44:57+00:00 app[web.1]: 
+2012-02-26T08:44:57+00:00 app[web.1]: 
+2012-02-26T08:44:57+00:00 app[web.1]: cache: [GET /] miss
+2012-02-26T08:44:57+00:00 heroku[router]: GET cold-robot-2030.heroku.com/ dyno=web.1 queue=0 wait=0ms service=147ms status=500 bytes=728
+2012-02-26T08:44:57+00:00 heroku[nginx]: 222.65.253.140 - - [26/Feb/2012:08:44:57 +0000] "GET / HTTP/1.1" 500 728 "-" "Mozilla/5.0 (Windows NT 5.1; rv:10.0.2) Gecko/20100101 Firefox/10.0.2" cold-robot-2030.heroku.com
+2012-02-26T08:45:13+00:00 app[web.1]: 
+2012-02-26T08:45:13+00:00 app[web.1]: 
+2012-02-26T08:45:13+00:00 app[web.1]: Started GET "/" for 222.65.253.140 at 2012-02-26 00:45:13 -0800
+2012-02-26T08:45:13+00:00 app[web.1]:   Processing by PagesController#home as HTML
+2012-02-26T08:45:13+00:00 app[web.1]: Rendered pages/home.html.erb within layouts/application (0.3ms)
+2012-02-26T08:45:13+00:00 app[web.1]: Rendered layouts/_stylesheets.html.erb (0.6ms)
+2012-02-26T08:45:13+00:00 app[web.1]: Completed 500 Internal Server Error in 2ms
+2012-02-26T08:45:13+00:00 app[web.1]:     3: <![endif]-->
+2012-02-26T08:45:13+00:00 app[web.1]:     6: <!--[if lt IE 8]><%= stylesheet_link_tag 'blueprint/ie' %><![endif]-->
+2012-02-26T08:45:13+00:00 app[web.1]:   app/views/layouts/_stylesheets.html.erb:4:in `_app_views_layouts__stylesheets_html_erb___4064946858904511808_18698600'
+2012-02-26T08:45:13+00:00 app[web.1]:     5: <%= stylesheet_link_tag 'blueprint/print',  :media => 'print' %>
+2012-02-26T08:45:13+00:00 heroku[nginx]: 222.65.253.140 - - [26/Feb/2012:08:45:13 +0000] "GET / HTTP/1.1" 500 728 "-" "Mozilla/5.0 (Windows NT 5.1; rv:10.0.2) Gecko/20100101 Firefox/10.0.2" cold-robot-2030.heroku.com
+2012-02-26T08:45:13+00:00 app[web.1]:     2: <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+2012-02-26T08:45:13+00:00 app[web.1]:     4: <%= stylesheet_link_tag 'blueprint/screen', :media => 'screen' %>
+2012-02-26T08:45:13+00:00 app[web.1]:     7: <%= stylesheet_link_tag 'custom', :media => 'screen' %>
+2012-02-26T08:45:13+00:00 app[web.1]: ActionView::Template::Error (blueprint/screen.css isn't precompiled):
+2012-02-26T08:45:13+00:00 app[web.1]:     1: <!--[if lt IE 9]>
+2012-02-26T08:45:13+00:00 app[web.1]: cache: [GET /] miss
+2012-02-26T08:45:13+00:00 app[web.1]:   app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb___2816584567809116105_22608500'
+2012-02-26T08:45:13+00:00 app[web.1]: 
+2012-02-26T08:45:13+00:00 heroku[router]: GET cold-robot-2030.heroku.com/ dyno=web.1 queue=0 wait=0ms service=10ms status=500 bytes=728
+2012-02-26T08:45:13+00:00 app[web.1]: 
+2012-02-26T08:45:13+00:00 app[web.1]: 
